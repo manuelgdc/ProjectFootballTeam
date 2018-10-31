@@ -15,7 +15,7 @@ export class JugadorComponent implements OnInit {
                 ) { 
 
     this.activatedRoute.params.subscribe( params => {
-      this.jugador = this.jugadoresService.getJugador(params['id']);
+      this.jugador = this.jugadoresService.getJugador(params['id?']);
     });
   }
 

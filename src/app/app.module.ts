@@ -13,6 +13,7 @@ import { JugadoresComponent } from './components/jugadores/jugadores.component';
 //servicios
 import {JugadoresService} from './services/jugadores.service';
 import { JugadorComponent } from './components/jugador/jugador.component';
+import { BuscadorComponent } from './components/buscador/buscador.component';
 
 
 
@@ -23,7 +24,8 @@ import { JugadorComponent } from './components/jugador/jugador.component';
     HomeComponent,
     AboutComponent,
     JugadoresComponent,
-    JugadorComponent
+    JugadorComponent,
+    BuscadorComponent
   ],
   imports: [
     BrowserModule,
