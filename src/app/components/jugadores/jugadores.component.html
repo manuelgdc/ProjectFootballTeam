@@ -1,0 +1,19 @@
+<h1>
+  Jugadores
+</h1>
+<hr>
+<div class="card-columns" >
+  <div class="card animated fadeIn fast" *ngFor="let jugador of jugadores">
+    <img class="card-img-top" [src]="jugador.img" [alt]="jugador.nombre">
+    <div class="card-body">
+      <h5 class="card-title">{{ jugador.nombre }}</h5>
+      <p class="card-text">{{ jugador.bio }}</p>
+      <small class="text-muted">
+        {{jugador.aparicion}}
+      </small>
+      <!--<button type="button" class="btn btn-outline-primary btn-block"> Ver más...</button> -->
+      <a  [routerLink]="['/jugador',i]" class="btn btn-outline-primary">Ver más...</a>
+    </div>
+  </div>
+</div>
+
