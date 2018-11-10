@@ -1,20 +1,21 @@
-<h1> {{ jugador?.nombre }} <small>{{ jugador?.puesto }}</small></h1>
-<div class="row">
+<h1> {{ jugador.nombre }} <small>{{ jugador.puesto }}</small></h1>
+<hr>
+<div class="row animated fadeIn fast">
 <div class="col-md-4">
+    <img [src]="jugador.img" class="img-fluid" [alt]="jugador.nombre">
 
-<br><br>
 <a [routerLink]="['/jugadores']" class="btn btn-outline-danger btn-block">Regresar</a> 
 </div>
 
 <div class="col-md-8">
-  <h3>{{ jugador?.nombre }}</h3>
+  <h3>{{ jugador.nombre }}</h3>
   <hr>
-  <p>{{ jugador?.bio }}</p>
-</div>
+  <p>{{ jugador.bio }}</p>
+<div>
   <img class="imglogo" src="../../../assets/img/escudo.png" alt="">
 </div>
-
-
+</div>
+</div>
 
 
 

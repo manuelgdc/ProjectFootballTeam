@@ -14,6 +14,7 @@ import { JugadoresComponent } from './components/jugadores/jugadores.component';
 import {JugadoresService} from './services/jugadores.service';
 import { JugadorComponent } from './components/jugador/jugador.component';
 import { BuscadorComponent } from './components/buscador/buscador.component';
+import { JugadorTarjetaComponent } from './components/jugador-tarjeta/jugador-tarjeta.component';
 
 
 
@@ -25,7 +26,8 @@ import { BuscadorComponent } from './components/buscador/buscador.component';
     AboutComponent,
     JugadoresComponent,
     JugadorComponent,
-    BuscadorComponent
+    BuscadorComponent,
+    JugadorTarjetaComponent
   ],
   imports: [
     BrowserModule,

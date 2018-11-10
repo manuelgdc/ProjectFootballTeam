@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import {JugadoresService, Jugadores} from '../../services/jugadores.service';
+import {Router} from '@angular/router';
 
 @Component({
   selector: 'app-jugadores',
@@ -10,10 +11,12 @@ export class JugadoresComponent implements OnInit {
 
   jugadores:Jugadores[]=[];
 
-  constructor(private _jugadoresServices:JugadoresService ) { }
+  constructor(private _jugadoresServices:JugadoresService, private router:Router ) { }
 
   ngOnInit() {
     this.jugadores=this._jugadoresServices.getJugadores();
   }
+
+ 
 
 }
