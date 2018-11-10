@@ -4,6 +4,6 @@
 <hr>
 <div class="card-columns" >
 
-<app-jugador-tarjeta [jugador]="j"  [index]="i" *ngFor="let j of jugadores ; let i = index"></app-jugador-tarjeta>
+<app-jugador-tarjeta (jugadorSeleccionado)="verJugador($event)" [jugador]="j"  [index]="i" *ngFor="let j of jugadores ; let i = index"></app-jugador-tarjeta>
 </div>
 
