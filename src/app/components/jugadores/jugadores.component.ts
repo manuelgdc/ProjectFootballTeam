@@ -8,7 +8,7 @@ import {Router} from '@angular/router';
   styleUrls: ['./jugadores.component.css']
 })
 export class JugadoresComponent implements OnInit {
-
+ 
   jugadores:Jugadores[]=[];
 
   constructor(private _jugadoresServices:JugadoresService, private router:Router ) { }
@@ -17,6 +17,8 @@ export class JugadoresComponent implements OnInit {
     this.jugadores=this._jugadoresServices.getJugadores();
   }
 
- 
+  verJugador(index:number){
+    this.router.navigate(['/jugador',index]);
+  }
 
 }

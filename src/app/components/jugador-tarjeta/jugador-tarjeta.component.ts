@@ -20,7 +20,7 @@ export class JugadorTarjetaComponent implements OnInit {
   ngOnInit() {
   }
 
-  verJugador( ){
+  verJugador(){
     //this.router.navigate(['/jugador',this.index]);
     this.jugadorSeleccionado.emit(this.index);
   }
